@@ -33,17 +33,17 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CategoryGV = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Categorytextbox = new System.Windows.Forms.TextBox();
+            this.PCIDtextbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CategoryGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -61,10 +61,11 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(194, 354);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(59, 27);
+            this.button3.Size = new System.Drawing.Size(63, 27);
             this.button3.TabIndex = 42;
-            this.button3.Text = "Clear";
+            this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -73,10 +74,11 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(108, 354);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 27);
+            this.button2.Size = new System.Drawing.Size(63, 27);
             this.button2.TabIndex = 41;
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -85,10 +87,11 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(22, 354);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 27);
+            this.button1.Size = new System.Drawing.Size(63, 27);
             this.button1.TabIndex = 40;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -100,6 +103,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 56);
             this.panel1.TabIndex = 39;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::ims.Properties.Resources.close_white;
+            this.pictureBox6.Location = new System.Drawing.Point(748, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.TabIndex = 70;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label8
             // 
@@ -119,14 +133,15 @@
             this.panel2.Size = new System.Drawing.Size(200, 16);
             this.panel2.TabIndex = 43;
             // 
-            // dataGridView1
+            // CategoryGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(366, 95);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(412, 312);
-            this.dataGridView1.TabIndex = 38;
+            this.CategoryGV.BackgroundColor = System.Drawing.Color.White;
+            this.CategoryGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CategoryGV.Location = new System.Drawing.Point(366, 95);
+            this.CategoryGV.Name = "CategoryGV";
+            this.CategoryGV.Size = new System.Drawing.Size(412, 312);
+            this.CategoryGV.TabIndex = 38;
+            this.CategoryGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -146,30 +161,20 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "ID";
             // 
-            // textBox4
+            // Categorytextbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(26, 261);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(227, 20);
-            this.textBox4.TabIndex = 28;
+            this.Categorytextbox.Location = new System.Drawing.Point(26, 261);
+            this.Categorytextbox.Name = "Categorytextbox";
+            this.Categorytextbox.Size = new System.Drawing.Size(227, 20);
+            this.Categorytextbox.TabIndex = 28;
+            this.Categorytextbox.TextChanged += new System.EventHandler(this.Categorytextbox_TextChanged);
             // 
-            // textBox1
+            // PCIDtextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 172);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
-            this.textBox1.TabIndex = 24;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::ims.Properties.Resources.close_white;
-            this.pictureBox6.Location = new System.Drawing.Point(748, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox6.TabIndex = 70;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.PCIDtextbox.Location = new System.Drawing.Point(26, 172);
+            this.PCIDtextbox.Name = "PCIDtextbox";
+            this.PCIDtextbox.Size = new System.Drawing.Size(227, 20);
+            this.PCIDtextbox.TabIndex = 24;
             // 
             // productcategories
             // 
@@ -182,17 +187,18 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CategoryGV);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Categorytextbox);
+            this.Controls.Add(this.PCIDtextbox);
             this.Name = "productcategories";
             this.Text = "productcategories";
+            this.Load += new System.EventHandler(this.productcategories_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CategoryGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,11 +213,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CategoryGV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Categorytextbox;
+        private System.Windows.Forms.TextBox PCIDtextbox;
         private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

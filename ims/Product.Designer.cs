@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PNameextbox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProductGV = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PDesctextbox = new System.Windows.Forms.TextBox();
+            this.PQtytextbox = new System.Windows.Forms.TextBox();
+            this.PIDtextbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.PPricetextbox = new System.Windows.Forms.TextBox();
+            this.Catcombo = new System.Windows.Forms.ComboBox();
+            this.Searchcombo = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductGV)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox4
+            // PNameextbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(123, 124);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(197, 20);
-            this.textBox4.TabIndex = 45;
+            this.PNameextbox.Location = new System.Drawing.Point(123, 124);
+            this.PNameextbox.Name = "PNameextbox";
+            this.PNameextbox.Size = new System.Drawing.Size(197, 20);
+            this.PNameextbox.TabIndex = 45;
             // 
             // panel3
             // 
@@ -102,6 +102,7 @@
             this.button2.TabIndex = 41;
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -126,6 +127,17 @@
             this.panel1.Size = new System.Drawing.Size(800, 56);
             this.panel1.TabIndex = 39;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::ims.Properties.Resources.close_white;
+            this.pictureBox6.Location = new System.Drawing.Point(748, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.TabIndex = 70;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -138,14 +150,15 @@
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // dataGridView1
+            // ProductGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(376, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(402, 266);
-            this.dataGridView1.TabIndex = 38;
+            this.ProductGV.BackgroundColor = System.Drawing.Color.White;
+            this.ProductGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProductGV.Location = new System.Drawing.Point(376, 141);
+            this.ProductGV.Name = "ProductGV";
+            this.ProductGV.Size = new System.Drawing.Size(402, 266);
+            this.ProductGV.TabIndex = 38;
+            this.ProductGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label3
             // 
@@ -175,26 +188,26 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Product ID";
             // 
-            // textBox3
+            // PDesctextbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 238);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(304, 20);
-            this.textBox3.TabIndex = 28;
+            this.PDesctextbox.Location = new System.Drawing.Point(16, 238);
+            this.PDesctextbox.Name = "PDesctextbox";
+            this.PDesctextbox.Size = new System.Drawing.Size(304, 20);
+            this.PDesctextbox.TabIndex = 28;
             // 
-            // textBox2
+            // PQtytextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 181);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(70, 20);
-            this.textBox2.TabIndex = 27;
+            this.PQtytextbox.Location = new System.Drawing.Point(16, 181);
+            this.PQtytextbox.Name = "PQtytextbox";
+            this.PQtytextbox.Size = new System.Drawing.Size(70, 20);
+            this.PQtytextbox.TabIndex = 27;
             // 
-            // textBox1
+            // PIDtextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(84, 20);
-            this.textBox1.TabIndex = 26;
+            this.PIDtextbox.Location = new System.Drawing.Point(16, 124);
+            this.PIDtextbox.Name = "PIDtextbox";
+            this.PIDtextbox.Size = new System.Drawing.Size(84, 20);
+            this.PIDtextbox.TabIndex = 26;
             // 
             // label4
             // 
@@ -205,32 +218,33 @@
             this.label4.TabIndex = 34;
             this.label4.Text = "Description";
             // 
-            // textBox8
+            // PPricetextbox
             // 
-            this.textBox8.Location = new System.Drawing.Point(193, 181);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(127, 20);
-            this.textBox8.TabIndex = 47;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.PPricetextbox.Location = new System.Drawing.Point(193, 181);
+            this.PPricetextbox.Name = "PPricetextbox";
+            this.PPricetextbox.Size = new System.Drawing.Size(127, 20);
+            this.PPricetextbox.TabIndex = 47;
+            this.PPricetextbox.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // comboBox1
+            // Catcombo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(94, 286);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 21);
-            this.comboBox1.TabIndex = 48;
-            this.comboBox1.Text = "Product Category";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.Catcombo.FormattingEnabled = true;
+            this.Catcombo.Location = new System.Drawing.Point(94, 286);
+            this.Catcombo.Name = "Catcombo";
+            this.Catcombo.Size = new System.Drawing.Size(135, 21);
+            this.Catcombo.TabIndex = 48;
+            this.Catcombo.Text = "Product Category";
+            this.Catcombo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // Searchcombo
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(438, 110);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(146, 21);
-            this.comboBox2.TabIndex = 49;
-            this.comboBox2.Text = "Select Category";
+            this.Searchcombo.FormattingEnabled = true;
+            this.Searchcombo.Location = new System.Drawing.Point(438, 110);
+            this.Searchcombo.Name = "Searchcombo";
+            this.Searchcombo.Size = new System.Drawing.Size(146, 21);
+            this.Searchcombo.TabIndex = 49;
+            this.Searchcombo.Text = "Select Category";
+            this.Searchcombo.SelectedIndexChanged += new System.EventHandler(this.Searchcombo_SelectedIndexChanged);
             // 
             // button4
             // 
@@ -243,6 +257,7 @@
             this.button4.TabIndex = 50;
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -255,6 +270,7 @@
             this.button5.TabIndex = 51;
             this.button5.Text = "Refresh";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label5
             // 
@@ -265,17 +281,6 @@
             this.label5.TabIndex = 52;
             this.label5.Text = "Price";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::ims.Properties.Resources.close_white;
-            this.pictureBox6.Location = new System.Drawing.Point(748, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox6.TabIndex = 70;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,38 +289,38 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Searchcombo);
+            this.Controls.Add(this.Catcombo);
+            this.Controls.Add(this.PPricetextbox);
+            this.Controls.Add(this.PNameextbox);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ProductGV);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PDesctextbox);
+            this.Controls.Add(this.PQtytextbox);
+            this.Controls.Add(this.PIDtextbox);
             this.Controls.Add(this.label4);
             this.Name = "Product";
             this.Text = "Product";
             this.Load += new System.EventHandler(this.Product_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PNameextbox;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
@@ -323,17 +328,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ProductGV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PDesctextbox;
+        private System.Windows.Forms.TextBox PQtytextbox;
+        private System.Windows.Forms.TextBox PIDtextbox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox PPricetextbox;
+        private System.Windows.Forms.ComboBox Catcombo;
+        private System.Windows.Forms.ComboBox Searchcombo;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label5;

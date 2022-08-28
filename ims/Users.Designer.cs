@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.fntextbox = new System.Windows.Forms.TextBox();
-            this.ontextbox = new System.Windows.Forms.TextBox();
-            this.emailtextbox = new System.Windows.Forms.TextBox();
-            this.pntextbox = new System.Windows.Forms.TextBox();
-            this.usernametextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.usersgv = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,52 +42,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lntextbox = new System.Windows.Forms.TextBox();
-            this.passwordtextbox = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.usersgv)).BeginInit();
+            this.Pntextbox = new System.Windows.Forms.TextBox();
+            this.Usernametextbox = new System.Windows.Forms.TextBox();
+            this.Passwordtextbox = new System.Windows.Forms.TextBox();
+            this.Fntextbox = new System.Windows.Forms.TextBox();
+            this.Lntextbox = new System.Windows.Forms.TextBox();
+            this.Emailtextbox = new System.Windows.Forms.TextBox();
+            this.UserGV = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserGV)).BeginInit();
             this.SuspendLayout();
-            // 
-            // fntextbox
-            // 
-            this.fntextbox.Location = new System.Drawing.Point(16, 124);
-            this.fntextbox.Name = "fntextbox";
-            this.fntextbox.Size = new System.Drawing.Size(166, 20);
-            this.fntextbox.TabIndex = 0;
-            this.fntextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // ontextbox
-            // 
-            this.ontextbox.Location = new System.Drawing.Point(16, 181);
-            this.ontextbox.Name = "ontextbox";
-            this.ontextbox.Size = new System.Drawing.Size(361, 20);
-            this.ontextbox.TabIndex = 1;
-            this.ontextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // emailtextbox
-            // 
-            this.emailtextbox.Location = new System.Drawing.Point(16, 240);
-            this.emailtextbox.Name = "emailtextbox";
-            this.emailtextbox.Size = new System.Drawing.Size(202, 20);
-            this.emailtextbox.TabIndex = 2;
-            this.emailtextbox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // pntextbox
-            // 
-            this.pntextbox.Location = new System.Drawing.Point(247, 240);
-            this.pntextbox.Name = "pntextbox";
-            this.pntextbox.Size = new System.Drawing.Size(130, 20);
-            this.pntextbox.TabIndex = 4;
-            this.pntextbox.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // usernametextbox
-            // 
-            this.usernametextbox.Location = new System.Drawing.Point(16, 299);
-            this.usernametextbox.Name = "usernametextbox";
-            this.usernametextbox.Size = new System.Drawing.Size(166, 20);
-            this.usernametextbox.TabIndex = 8;
-            this.usernametextbox.TextChanged += new System.EventHandler(this.textBox6_TextChanged_1);
             // 
             // label1
             // 
@@ -116,20 +74,10 @@
             this.label2.Text = "Last name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Other name(s)";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 224);
+            this.label4.Location = new System.Drawing.Point(13, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 13;
@@ -139,7 +87,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(244, 224);
+            this.label5.Location = new System.Drawing.Point(244, 195);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 13);
             this.label5.TabIndex = 14;
@@ -165,16 +113,6 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Password";
             this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // usersgv
-            // 
-            this.usersgv.BackgroundColor = System.Drawing.Color.White;
-            this.usersgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersgv.Location = new System.Drawing.Point(412, 95);
-            this.usersgv.Name = "usersgv";
-            this.usersgv.Size = new System.Drawing.Size(366, 312);
-            this.usersgv.TabIndex = 17;
-            this.usersgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
@@ -267,73 +205,107 @@
             this.panel3.TabIndex = 23;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // lntextbox
+            // Pntextbox
             // 
-            this.lntextbox.Location = new System.Drawing.Point(211, 124);
-            this.lntextbox.Name = "lntextbox";
-            this.lntextbox.Size = new System.Drawing.Size(166, 20);
-            this.lntextbox.TabIndex = 24;
+            this.Pntextbox.Location = new System.Drawing.Point(247, 211);
+            this.Pntextbox.Name = "Pntextbox";
+            this.Pntextbox.Size = new System.Drawing.Size(130, 20);
+            this.Pntextbox.TabIndex = 30;
+            this.Pntextbox.TextChanged += new System.EventHandler(this.Pntextbox_TextChanged);
             // 
-            // passwordtextbox
+            // Usernametextbox
             // 
-            this.passwordtextbox.Location = new System.Drawing.Point(211, 299);
-            this.passwordtextbox.Name = "passwordtextbox";
-            this.passwordtextbox.Size = new System.Drawing.Size(166, 20);
-            this.passwordtextbox.TabIndex = 25;
+            this.Usernametextbox.Location = new System.Drawing.Point(16, 299);
+            this.Usernametextbox.Name = "Usernametextbox";
+            this.Usernametextbox.Size = new System.Drawing.Size(166, 20);
+            this.Usernametextbox.TabIndex = 31;
+            this.Usernametextbox.TextChanged += new System.EventHandler(this.Usernametextbox_TextChanged);
+            // 
+            // Passwordtextbox
+            // 
+            this.Passwordtextbox.Location = new System.Drawing.Point(211, 299);
+            this.Passwordtextbox.Name = "Passwordtextbox";
+            this.Passwordtextbox.Size = new System.Drawing.Size(166, 20);
+            this.Passwordtextbox.TabIndex = 32;
+            this.Passwordtextbox.TextChanged += new System.EventHandler(this.Passwordtextbox_TextChanged_1);
+            // 
+            // Fntextbox
+            // 
+            this.Fntextbox.Location = new System.Drawing.Point(16, 121);
+            this.Fntextbox.Name = "Fntextbox";
+            this.Fntextbox.Size = new System.Drawing.Size(166, 20);
+            this.Fntextbox.TabIndex = 33;
+            this.Fntextbox.TextChanged += new System.EventHandler(this.Fntextbox_TextChanged_1);
+            // 
+            // Lntextbox
+            // 
+            this.Lntextbox.Location = new System.Drawing.Point(211, 121);
+            this.Lntextbox.Name = "Lntextbox";
+            this.Lntextbox.Size = new System.Drawing.Size(166, 20);
+            this.Lntextbox.TabIndex = 34;
+            this.Lntextbox.TextChanged += new System.EventHandler(this.Lntextbox_TextChanged_1);
+            // 
+            // Emailtextbox
+            // 
+            this.Emailtextbox.Location = new System.Drawing.Point(16, 211);
+            this.Emailtextbox.Name = "Emailtextbox";
+            this.Emailtextbox.Size = new System.Drawing.Size(202, 20);
+            this.Emailtextbox.TabIndex = 36;
+            this.Emailtextbox.TextChanged += new System.EventHandler(this.Emailtextbox_TextChanged_1);
+            // 
+            // UserGV
+            // 
+            this.UserGV.BackgroundColor = System.Drawing.Color.White;
+            this.UserGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UserGV.Location = new System.Drawing.Point(426, 105);
+            this.UserGV.Name = "UserGV";
+            this.UserGV.Size = new System.Drawing.Size(352, 300);
+            this.UserGV.TabIndex = 37;
+            this.UserGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UserGV_CellContentClick);
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.passwordtextbox);
-            this.Controls.Add(this.lntextbox);
+            this.Controls.Add(this.UserGV);
+            this.Controls.Add(this.Emailtextbox);
+            this.Controls.Add(this.Lntextbox);
+            this.Controls.Add(this.Fntextbox);
+            this.Controls.Add(this.Passwordtextbox);
+            this.Controls.Add(this.Usernametextbox);
+            this.Controls.Add(this.Pntextbox);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.usersgv);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.usernametextbox);
-            this.Controls.Add(this.pntextbox);
-            this.Controls.Add(this.emailtextbox);
-            this.Controls.Add(this.ontextbox);
-            this.Controls.Add(this.fntextbox);
             this.Name = "Users";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.usersgv)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox fntextbox;
-        private System.Windows.Forms.TextBox ontextbox;
-        private System.Windows.Forms.TextBox emailtextbox;
-        private System.Windows.Forms.TextBox pntextbox;
-        private System.Windows.Forms.TextBox usernametextbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView usersgv;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -341,8 +313,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox lntextbox;
-        private System.Windows.Forms.TextBox passwordtextbox;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox Pntextbox;
+        private System.Windows.Forms.TextBox Usernametextbox;
+        private System.Windows.Forms.TextBox Passwordtextbox;
+        private System.Windows.Forms.TextBox Fntextbox;
+        private System.Windows.Forms.TextBox Lntextbox;
+        private System.Windows.Forms.TextBox Emailtextbox;
+        private System.Windows.Forms.DataGridView UserGV;
     }
 }

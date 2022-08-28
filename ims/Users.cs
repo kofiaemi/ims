@@ -34,7 +34,7 @@ namespace ims
                 SqlCommandBuilder builder = new SqlCommandBuilder(da);
                 var ds = new DataSet();
                 da.Fill(ds);
-                usersgv.DataSource = ds.Tables[0];
+                UserGV.DataSource = ds.Tables[0];
                 Con.Close();
             }
             catch
@@ -70,15 +70,15 @@ namespace ims
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(pntextbox.Text == "")
+            if(Usernametextbox.Text == "")
             {
-                MessageBox.Show("Enter Phone Number");
+                MessageBox.Show("Enter Username");
             }
             else
             {
                 Con.Open();
-                string myquery = "delete from usertable where UPassword='" + pntextbox.Text + "'";
-                SqlCommand cmd = new SqlCommand(myquery, Con);
+                string Myquery = "delete from usertable where UUsername='" + Usernametextbox.Text + "';";
+                SqlCommand cmd = new SqlCommand(Myquery, Con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("User Sucessfully Deleted");
                 Con.Close();
@@ -86,10 +86,6 @@ namespace ims
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -147,9 +143,9 @@ namespace ims
             try
             {
                 Con.Open();
-                SqlCommand cmd = new SqlCommand("insert into usertable values('" + fntextbox.Text + "','" + lntextbox.Text + "','" + ontextbox.Text + "','" + emailtextbox.Text + "','" + pntextbox.Text + "','" + usernametextbox.Text + "','" + passwordtextbox.Text + "')", Con);
+                SqlCommand cmd = new SqlCommand("insert into usertable values('" + Fntextbox.Text + "','" + Lntextbox.Text + "','" + Emailtextbox.Text + "','" + Pntextbox.Text + "','" + Usernametextbox.Text + "','" + Passwordtextbox.Text + "')", Con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Users Successfully Added");
+                MessageBox.Show("User Successfully Added");
                 Con.Close();
                 populate();
 
@@ -162,7 +158,20 @@ namespace ims
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("update usertable set UFirstname='" + Fntextbox.Text + "',ULastname='" + Lntextbox.Text + "',UEmail='" + Emailtextbox.Text + "',UPhonenumber='" + Pntextbox.Text + "',UUsername='" + Usernametextbox.Text + "',UPassword='" + Passwordtextbox.Text + "'where UUsername='"+Usernametextbox.Text+"')", Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Credentials Successfully Updated");
+                Con.Close();
+                populate();
 
+            }
+            catch
+            {
+
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -188,6 +197,59 @@ namespace ims
         private void Users_Load(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void UsersGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+    
+      
+
+        private void Passwordtextbox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Usernametextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pntextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ontextbox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fntextbox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lntextbox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Emailtextbox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Fntextbox.Text = UserGV.SelectedRows[0].Cells[0].Value.ToString();
+            Lntextbox.Text = UserGV.SelectedRows[0].Cells[1].Value.ToString();
+            Emailtextbox.Text = UserGV.SelectedRows[0].Cells[2].Value.ToString();
+            Pntextbox.Text = UserGV.SelectedRows[0].Cells[3].Value.ToString();
+            Usernametextbox.Text = UserGV.SelectedRows[0].Cells[4].Value.ToString();
+            Passwordtextbox.Text = UserGV.SelectedRows[0].Cells[5].Value.ToString();
         }
     }
 }
