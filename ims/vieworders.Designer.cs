@@ -33,13 +33,16 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.label8);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -83,6 +86,17 @@
             this.panel2.Size = new System.Drawing.Size(200, 16);
             this.panel2.TabIndex = 65;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::ims.Properties.Resources.close_white;
+            this.pictureBox6.Location = new System.Drawing.Point(748, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.TabIndex = 70;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // vieworders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +111,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,5 +123,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

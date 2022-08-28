@@ -40,8 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -91,6 +93,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.label8);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -157,6 +160,17 @@
             this.textBox1.Size = new System.Drawing.Size(227, 20);
             this.textBox1.TabIndex = 24;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::ims.Properties.Resources.close_white;
+            this.pictureBox6.Location = new System.Drawing.Point(748, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.TabIndex = 70;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // productcategories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +192,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +212,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

@@ -146,5 +146,47 @@
   <ItemGroup>
     <None Include="Resources\ims1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imsbg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close white.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
