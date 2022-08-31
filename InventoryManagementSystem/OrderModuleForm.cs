@@ -184,6 +184,24 @@ namespace InventoryManagementSystem
             con.Close();
         }
 
-     
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblOid_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

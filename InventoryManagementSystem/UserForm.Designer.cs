@@ -50,13 +50,12 @@ namespace InventoryManagementSystem
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 456);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(992, 50);
+            this.panel1.Size = new System.Drawing.Size(900, 50);
             this.panel1.TabIndex = 0;
             // 
             // btnAdd
@@ -64,7 +63,7 @@ namespace InventoryManagementSystem
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageHover")));
             this.btnAdd.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageNormal")));
-            this.btnAdd.Location = new System.Drawing.Point(953, 9);
+            this.btnAdd.Location = new System.Drawing.Point(846, 9);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(27, 29);
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,10 +88,10 @@ namespace InventoryManagementSystem
             this.dgvUser.BackgroundColor = System.Drawing.Color.White;
             this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -114,11 +113,10 @@ namespace InventoryManagementSystem
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUser.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUser.EnableHeadersVisualStyles = false;
             this.dgvUser.Location = new System.Drawing.Point(0, 0);
             this.dgvUser.Name = "dgvUser";
-            this.dgvUser.Size = new System.Drawing.Size(992, 456);
+            this.dgvUser.Size = new System.Drawing.Size(900, 506);
             this.dgvUser.TabIndex = 1;
             this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
             // 
@@ -177,8 +175,8 @@ namespace InventoryManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 506);
-            this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgvUser);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

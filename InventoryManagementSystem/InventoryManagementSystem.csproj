@@ -230,5 +230,8 @@
   <ItemGroup>
     <None Include="Resources\product highlighted.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopritelogolg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

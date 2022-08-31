@@ -121,11 +121,11 @@
   <data name="user highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shopritelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopritelogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="product category highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\product category highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="product highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="order" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -135,6 +135,9 @@
   </data>
   <data name="order highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\order highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopritelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopritelogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="customer highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\customer highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +151,7 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="product highlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\product highlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopritelogolg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopritelogolg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
