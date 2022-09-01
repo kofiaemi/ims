@@ -29,9 +29,7 @@ namespace InventoryManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductModuleForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPDes = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +45,7 @@ namespace InventoryManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.comboCat = new System.Windows.Forms.ComboBox();
             this.lblPid = new System.Windows.Forms.Label();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -62,17 +61,6 @@ namespace InventoryManagementSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(900, 49);
             this.panel1.TabIndex = 14;
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-            this.pictureBoxClose.Location = new System.Drawing.Point(859, 12);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(29, 27);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxClose.TabIndex = 11;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // label1
             // 
@@ -108,7 +96,7 @@ namespace InventoryManagementSystem
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(531, 419);
+            this.btnClear.Location = new System.Drawing.Point(500, 399);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 37);
             this.btnClear.TabIndex = 25;
@@ -122,7 +110,7 @@ namespace InventoryManagementSystem
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(431, 419);
+            this.btnUpdate.Location = new System.Drawing.Point(400, 399);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 37);
             this.btnUpdate.TabIndex = 24;
@@ -136,7 +124,7 @@ namespace InventoryManagementSystem
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(331, 419);
+            this.btnSave.Location = new System.Drawing.Point(300, 399);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 37);
             this.btnSave.TabIndex = 23;
@@ -219,6 +207,17 @@ namespace InventoryManagementSystem
             this.lblPid.TabIndex = 29;
             this.lblPid.Text = "product id";
             this.lblPid.Visible = false;
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Image = global::InventoryManagementSystem.Properties.Resources.close_window_30px;
+            this.pictureBoxClose.Location = new System.Drawing.Point(859, 10);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(29, 27);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxClose.TabIndex = 11;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // ProductModuleForm
             // 

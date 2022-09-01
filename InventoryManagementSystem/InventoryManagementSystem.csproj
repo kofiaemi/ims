@@ -233,5 +233,8 @@
   <ItemGroup>
     <None Include="Resources\shopritelogolg.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_30px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

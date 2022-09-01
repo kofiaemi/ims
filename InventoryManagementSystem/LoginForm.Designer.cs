@@ -29,7 +29,6 @@ namespace InventoryManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,8 +61,8 @@ namespace InventoryManagementSystem
             // 
             // pictureBoxClose
             // 
-            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-            this.pictureBoxClose.Location = new System.Drawing.Point(859, 19);
+            this.pictureBoxClose.Image = global::InventoryManagementSystem.Properties.Resources.close_window_30px;
+            this.pictureBoxClose.Location = new System.Drawing.Point(859, 10);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(29, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -138,7 +137,7 @@ namespace InventoryManagementSystem
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(321, 335);
+            this.btnLogin.Location = new System.Drawing.Point(321, 386);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(258, 45);
             this.btnLogin.TabIndex = 5;
@@ -163,7 +162,7 @@ namespace InventoryManagementSystem
             // checkBoxPass
             // 
             this.checkBoxPass.AutoSize = true;
-            this.checkBoxPass.Location = new System.Drawing.Point(442, 406);
+            this.checkBoxPass.Location = new System.Drawing.Point(452, 319);
             this.checkBoxPass.Name = "checkBoxPass";
             this.checkBoxPass.Size = new System.Drawing.Size(127, 21);
             this.checkBoxPass.TabIndex = 8;
@@ -175,7 +174,7 @@ namespace InventoryManagementSystem
             // 
             this.lblClear.AutoSize = true;
             this.lblClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblClear.Location = new System.Drawing.Point(355, 407);
+            this.lblClear.Location = new System.Drawing.Point(318, 319);
             this.lblClear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClear.Name = "lblClear";
             this.lblClear.Size = new System.Drawing.Size(43, 17);
