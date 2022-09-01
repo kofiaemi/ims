@@ -13,7 +13,7 @@ namespace InventoryManagementSystem
 {
     public partial class CustomerModuleForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\acer\Documents\dbIMS.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Kaitline\source\repos\ims\Database\dbIMS.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         public CustomerModuleForm()
         {
@@ -86,6 +86,11 @@ namespace InventoryManagementSystem
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txtCName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
