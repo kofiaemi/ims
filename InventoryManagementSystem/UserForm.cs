@@ -76,5 +76,10 @@ namespace InventoryManagementSystem
             }
             LoadUser();
         }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

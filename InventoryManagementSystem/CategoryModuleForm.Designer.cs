@@ -51,14 +51,14 @@ namespace InventoryManagementSystem
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 49);
+            this.panel1.Size = new System.Drawing.Size(620, 49);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = global::InventoryManagementSystem.Properties.Resources.close_window_30px;
-            this.pictureBoxClose.Location = new System.Drawing.Point(859, 12);
+            this.pictureBoxClose.Location = new System.Drawing.Point(580, 12);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(29, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -81,7 +81,7 @@ namespace InventoryManagementSystem
             // lblCatId
             // 
             this.lblCatId.AutoSize = true;
-            this.lblCatId.Location = new System.Drawing.Point(184, 228);
+            this.lblCatId.Location = new System.Drawing.Point(76, 161);
             this.lblCatId.Name = "lblCatId";
             this.lblCatId.Size = new System.Drawing.Size(77, 17);
             this.lblCatId.TabIndex = 35;
@@ -94,7 +94,7 @@ namespace InventoryManagementSystem
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(500, 399);
+            this.btnClear.Location = new System.Drawing.Point(361, 324);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 37);
             this.btnClear.TabIndex = 34;
@@ -108,7 +108,7 @@ namespace InventoryManagementSystem
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(400, 399);
+            this.btnUpdate.Location = new System.Drawing.Point(261, 324);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 37);
             this.btnUpdate.TabIndex = 33;
@@ -122,7 +122,7 @@ namespace InventoryManagementSystem
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(300, 399);
+            this.btnSave.Location = new System.Drawing.Point(161, 324);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 37);
             this.btnSave.TabIndex = 32;
@@ -132,7 +132,7 @@ namespace InventoryManagementSystem
             // 
             // txtCatName
             // 
-            this.txtCatName.Location = new System.Drawing.Point(277, 173);
+            this.txtCatName.Location = new System.Drawing.Point(169, 106);
             this.txtCatName.Name = "txtCatName";
             this.txtCatName.Size = new System.Drawing.Size(396, 22);
             this.txtCatName.TabIndex = 29;
@@ -140,7 +140,7 @@ namespace InventoryManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 175);
+            this.label2.Location = new System.Drawing.Point(54, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 28;
@@ -150,7 +150,7 @@ namespace InventoryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 506);
+            this.ClientSize = new System.Drawing.Size(620, 400);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblCatId);
             this.Controls.Add(this.btnClear);

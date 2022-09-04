@@ -59,14 +59,14 @@ namespace InventoryManagementSystem
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 49);
+            this.panel1.Size = new System.Drawing.Size(620, 49);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = global::InventoryManagementSystem.Properties.Resources.close_window_30px;
-            this.pictureBoxClose.Location = new System.Drawing.Point(859, 10);
+            this.pictureBoxClose.Location = new System.Drawing.Point(580, 12);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(29, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,7 +88,7 @@ namespace InventoryManagementSystem
             // 
             // txtPDes
             // 
-            this.txtPDes.Location = new System.Drawing.Point(312, 235);
+            this.txtPDes.Location = new System.Drawing.Point(170, 235);
             this.txtPDes.Name = "txtPDes";
             this.txtPDes.Size = new System.Drawing.Size(396, 22);
             this.txtPDes.TabIndex = 27;
@@ -96,7 +96,7 @@ namespace InventoryManagementSystem
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(209, 238);
+            this.label6.Location = new System.Drawing.Point(67, 238);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 17);
             this.label6.TabIndex = 26;
@@ -108,7 +108,7 @@ namespace InventoryManagementSystem
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(500, 399);
+            this.btnClear.Location = new System.Drawing.Point(361, 422);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 37);
             this.btnClear.TabIndex = 25;
@@ -122,7 +122,7 @@ namespace InventoryManagementSystem
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(400, 399);
+            this.btnUpdate.Location = new System.Drawing.Point(261, 422);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 37);
             this.btnUpdate.TabIndex = 24;
@@ -136,7 +136,7 @@ namespace InventoryManagementSystem
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(300, 399);
+            this.btnSave.Location = new System.Drawing.Point(161, 422);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 37);
             this.btnSave.TabIndex = 23;
@@ -147,7 +147,7 @@ namespace InventoryManagementSystem
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(221, 281);
+            this.label5.Location = new System.Drawing.Point(79, 281);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 17);
             this.label5.TabIndex = 21;
@@ -155,7 +155,7 @@ namespace InventoryManagementSystem
             // 
             // txtPPrice
             // 
-            this.txtPPrice.Location = new System.Drawing.Point(312, 192);
+            this.txtPPrice.Location = new System.Drawing.Point(170, 192);
             this.txtPPrice.Name = "txtPPrice";
             this.txtPPrice.Size = new System.Drawing.Size(396, 22);
             this.txtPPrice.TabIndex = 20;
@@ -163,7 +163,7 @@ namespace InventoryManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(247, 195);
+            this.label4.Location = new System.Drawing.Point(105, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 17);
             this.label4.TabIndex = 19;
@@ -171,7 +171,7 @@ namespace InventoryManagementSystem
             // 
             // txtPQty
             // 
-            this.txtPQty.Location = new System.Drawing.Point(312, 149);
+            this.txtPQty.Location = new System.Drawing.Point(170, 149);
             this.txtPQty.Name = "txtPQty";
             this.txtPQty.Size = new System.Drawing.Size(396, 22);
             this.txtPQty.TabIndex = 18;
@@ -179,7 +179,7 @@ namespace InventoryManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(226, 152);
+            this.label3.Location = new System.Drawing.Point(84, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 17;
@@ -187,7 +187,7 @@ namespace InventoryManagementSystem
             // 
             // txtPName
             // 
-            this.txtPName.Location = new System.Drawing.Point(312, 106);
+            this.txtPName.Location = new System.Drawing.Point(170, 106);
             this.txtPName.Name = "txtPName";
             this.txtPName.Size = new System.Drawing.Size(396, 22);
             this.txtPName.TabIndex = 16;
@@ -195,7 +195,7 @@ namespace InventoryManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(191, 108);
+            this.label2.Location = new System.Drawing.Point(49, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 17);
             this.label2.TabIndex = 15;
@@ -205,7 +205,7 @@ namespace InventoryManagementSystem
             // 
             this.comboCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCat.FormattingEnabled = true;
-            this.comboCat.Location = new System.Drawing.Point(312, 281);
+            this.comboCat.Location = new System.Drawing.Point(170, 281);
             this.comboCat.Name = "comboCat";
             this.comboCat.Size = new System.Drawing.Size(396, 25);
             this.comboCat.TabIndex = 28;
@@ -213,7 +213,7 @@ namespace InventoryManagementSystem
             // lblPid
             // 
             this.lblPid.AutoSize = true;
-            this.lblPid.Location = new System.Drawing.Point(209, 339);
+            this.lblPid.Location = new System.Drawing.Point(67, 339);
             this.lblPid.Name = "lblPid";
             this.lblPid.Size = new System.Drawing.Size(70, 17);
             this.lblPid.TabIndex = 29;
@@ -224,7 +224,7 @@ namespace InventoryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 506);
+            this.ClientSize = new System.Drawing.Size(620, 506);
             this.Controls.Add(this.lblPid);
             this.Controls.Add(this.comboCat);
             this.Controls.Add(this.panel1);

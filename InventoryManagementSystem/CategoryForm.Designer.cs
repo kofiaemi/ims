@@ -78,7 +78,7 @@ namespace InventoryManagementSystem
             this.dgvCategory.EnableHeadersVisualStyles = false;
             this.dgvCategory.Location = new System.Drawing.Point(0, 0);
             this.dgvCategory.Name = "dgvCategory";
-            this.dgvCategory.Size = new System.Drawing.Size(900, 506);
+            this.dgvCategory.Size = new System.Drawing.Size(900, 438);
             this.dgvCategory.TabIndex = 5;
             this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellContentClick);
             // 
@@ -123,7 +123,7 @@ namespace InventoryManagementSystem
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 456);
+            this.panel1.Location = new System.Drawing.Point(0, 434);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(900, 50);
             this.panel1.TabIndex = 4;
@@ -156,9 +156,9 @@ namespace InventoryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 506);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(900, 484);
             this.Controls.Add(this.dgvCategory);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
